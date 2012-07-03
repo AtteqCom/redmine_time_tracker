@@ -31,7 +31,7 @@ The newest version is always at {GitHub}[http://github.com/martinllanos/redmine_
 2. Delete the records found;
  <tt>delete from schema_migrations where version like '%redmine_time_tracker-41627c4r%';</tt> or <tt>delete from schema_migrations where version like '%redmine_time_tracker%';</tt>
 3. Copy the plug-in <tt><redmine_root>/plugins/
-4. Run <tt>rake db:migrate_plugins RAILS_ENV=production</tt>
+4. Run <tt>rake redmine:plugins:migrate RAILS_ENV=production</tt>
 
 == Uninstall 
 
