@@ -17,7 +17,7 @@ The newest version is always at {GitHub}[http://github.com/martinllanos/redmine_
 == Install
 
 1. Follow the Redmine plugin installation steps at: http://www.redmine.org/wiki/redmine/Plugins Make sure the plugin is installed to <tt>plugins/redmine_time_tracker</tt>
-2. Setup the database using the migrations. <tt>rake db:migrate_plugins RAILS_ENV=production</tt>
+2. Setup the database using the migrations. <tt>rake redmine:plugins:migrate RAILS_ENV=production</tt>
 3. Login to your Redmine install as an Administrator
 4. Setup the 'log time' permissions for your roles
 5. Add "Time tracking" to the enabled modules for your project
@@ -31,7 +31,7 @@ The newest version is always at {GitHub}[http://github.com/martinllanos/redmine_
 2. Delete the records found;
  <tt>delete from schema_migrations where version like '%redmine_time_tracker-41627c4r%';</tt> or <tt>delete from schema_migrations where version like '%redmine_time_tracker%';</tt>
 3. Copy the plug-in <tt><redmine_root>/plugins/
-4. Run <tt>rake db:migrate_plugins RAILS_ENV=production</tt>
+4. Run <tt>rake redmine:plugins:migrate RAILS_ENV=production</tt>
 
 == Uninstall 
 
