@@ -5,7 +5,7 @@
         <li>
         <%= link_to l(:resume_time_tracker).capitalize + ' #' + time_tracker.issue_id.to_s,
             { :controller => 'time_trackers', :action => 'resume' },
-            { :class => 'icon icon-start time-tracker-menu-update' }
+            { :class => 'icon icon-start time-tracker-menu-update', :onclick => 'contextMenuTimeTrackerItemClick(this); return false;' }
         %>
         </li>
     <% else %>
@@ -13,7 +13,7 @@
         <li>
         <%= link_to l(:suspend_time_tracker).capitalize + ' #' + time_tracker.issue_id.to_s,
             { :controller => 'time_trackers', :action => 'suspend' },
-            { :class => 'icon icon-pause time-tracker-menu-update' }
+            { :class => 'icon icon-pause time-tracker-menu-update', :onclick => 'contextMenuTimeTrackerItemClick(this); return false;' }
         %>
         </li>
     <% end %>
@@ -29,7 +29,7 @@
     <li>
         <%= link_to l(:start_time_tracker).capitalize + ' #' + @issue.id.to_s,
             { :controller => 'time_trackers', :action => 'start', :issue_id => @issue.id },
-            { :class => 'icon icon-start time-tracker-menu-update' }
+            { :class => 'icon icon-start time-tracker-menu-update', :onclick => 'contextMenuTimeTrackerItemClick(this); return false;' }
         %>
     </li>
 <% end %>
