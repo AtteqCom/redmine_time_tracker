@@ -26,7 +26,7 @@ class TimeTracker < ActiveRecord::Base
         running_time + time_spent
     end
 
-    def time_spent_to_s
+    def time_spent_formatted
         total = hours_spent
         hours = total.to_i
         minutes = ((total - hours) * 60).to_i
@@ -57,3 +57,4 @@ class TimeTracker < ActiveRecord::Base
         end
     end
 end
+
