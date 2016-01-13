@@ -1,4 +1,4 @@
-= Redmine Time Tracker plugin for Redmine >= 2.x only!!!
+= Redmine Time Tracker plugin for Redmine >= 3.2
 
 Time tracker is a Redmine plugin to ease time tracking when working on an issue.
 The plugin allows to start/suspend/resume/stop a timer on a per user basis.
@@ -12,7 +12,7 @@ The plugin allows to start/suspend/resume/stop a timer on a per user basis.
 
 == Getting the plugin
 
-The newest version is always at {GitHub}[http://github.com/martinllanos/redmine_time_tracker].
+The newest version is always at {GitHub}[http://github.com/babky-atteq/redmine_time_tracker]. This is a fork from {GitHub}[http://github.com/martinllanos/redmine_time_tracker] which got outdated.
 
 == Install
 
