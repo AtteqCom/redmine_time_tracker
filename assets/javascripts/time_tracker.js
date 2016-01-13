@@ -11,6 +11,8 @@ function updateElementIfChanged(id, newContent) {
 function updateTimeTrackerAjax() {
     $('.time-tracker-ajax').each(function () {
         $(this).click(function (event) {
+            event.preventDefault();
+
             $.ajax({
                 url: $(this).attr('href'),
                 success: function (data) { updateElementIfChanged('time-tracker-menu', data); }
