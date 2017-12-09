@@ -7,8 +7,7 @@ The span is populated with current time tracker state.
 (no AJAX request here, this allows to have the time tracker immediately visible)
 -->
 <%= javascript_tag "$(function () {
-    $('#time-tracker-menu').html(
-    '<span id=\"time-tracker-menu\">#{escape_javascript(((render :partial => 'time_trackers/embed_menu').delete "\n").strip)}</span>');
+    $('#account ul').prepend('<li><span id=\"time-tracker-menu\">#{escape_javascript(((render :partial => 'time_trackers/embed_menu').delete "\n").strip)}</span></li>');
     updateTimeTrackerAjax();
     });"
 %>
