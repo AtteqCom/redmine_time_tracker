@@ -7,6 +7,7 @@ module TimeTrackers
       def self.included(base) # :nodoc:
         # sending instance methods to module
         base.send(:include, InstanceMethods)
+        base.extend(InstanceMethods)
 
         base.class_eval do
           unloadable
@@ -60,8 +61,8 @@ module TimeTrackers
 		end
 
 		return false
-	    end
-      
+	    end     
+
       end
     end
   end
